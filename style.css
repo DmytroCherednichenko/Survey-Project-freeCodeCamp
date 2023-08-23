@@ -1,0 +1,118 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-Light.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-LightItalic.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-Medium.ttf) format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu/Ubuntu-MediumItalic.ttf) format("truetype");
+  font-weight: medium;
+  font-style: italic;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("./jason-goodman-Oalh2MojUuk-unsplash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+	padding: 0;
+    margin: 0;
+}
+
+header {
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: ubuntu, verdana, sans-serif;
+	text-align: center;
+}
+
+header h2 {
+	font-style: italic;
+	font-weight: lighter;
+}
+
+main {
+	width: 60%;
+	margin: 0 auto;
+	background-color: rgba(79, 47, 3, 0.8);
+	border-radius: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+label, form p {
+	color: whitesmoke;
+	font-family: ubuntu, verdana, sans-serif;
+	margin-bottom: 5px;
+}
+
+.survey-block {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	font-size: 20px;
+}
+
+#submit {
+    cursor: pointer;
+}
+

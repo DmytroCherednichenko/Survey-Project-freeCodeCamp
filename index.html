@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="bg-image">
+		<header>
+			<h1 id="title">JustSchool Survey Form</h1>
+			<p id="description">Thank you for taking the time to participate in this survey. Your opinions matter to us, and we truly value your input. Your feedback will help us understand how well we are meeting your expectations and how we can better serve you in the future.</p>
+		</header>
+		<main>
+			<form id="survey-form" action="table.html">
+				<div class="survey-block">
+					<label for="name" id="name-label" >Name</label>
+					<input id="name" name="name" type="text" placeholder="Enter your name" required>
+				</div>
+				<div class="survey-block">
+					<label for="email" id="email-label">Email</label>
+					<input id="email" name="email" type="email" placeholder="Enter your Email">
+				</div>
+				<div class="survey-block">
+					<label for="number" id="number-label">Age</label>
+					<input id="number" name="number" type="number" min="0" max="99" step="1" placeholder="Enter your age">
+				</div>
+				<div class="survey-block">
+					<label for="dropdown">Which option best describes your current role?</label>
+					<select id="dropdown" name="role">
+				    	<option value="" disabled selected hidden>Choose a role</option>
+				    	<option value="teacher">Teacher</option>
+				    	<option value="student">Student</option>
+				    	<option value="tutor">Tutor</option>
+				    	<option value="parent">Parent</option>
+					</select>
+				</div>
+				<div class="survey-block">
+					<p>Would you recommend JustSchool to a friend?</p>
+					<div class="radio-block">
+						<input type="radio" name="recommend" id="yes" value="yes">
+						<label for="yes">Yes</label>
+					</div>
+					<div class="radio-block">
+						<input type="radio" name="recommend" id="no" value="no">
+						<label for="no">No</label>
+					</div>
+				</div>
+				<div class="survey-block">
+					<p>What features would you like us to add?</p>
+					<div class="checkbox-block">
+						<input type="checkbox" name="feature" id="whiteboard" value="whiteboard">
+						<label for="whiteboard">Interactive Whiteboard</label>
+					</div>
+					<div class="checkbox-block">
+						<input type="checkbox" name="feature" id="groups" value="groups">
+						<label for=""groups>Group classes</label>
+					</div>
+					<div class="checkbox-block">
+						<input type="checkbox" name="feature" id="flashcards" value="flashcards">
+						<label for="flashcards">Flashcards</label>
+					</div>
+					<div class="checkbox-block">
+						<input type="checkbox" name="feature"  id="grammar-practice" value="grammar-practice">
+						<label for="grammar-practice">Grammar practice</label>
+					</div>
+					<div class="checkbox-block">
+						<input type="checkbox" name="feature" id="offline-lessons" value="offline-lessons">	
+						<label for="offline-lessons">Offline lessons</label>
+					</div>
+				</div>
+				<div class="survey-block">
+					<label for="comment">Any comments or suggestions?</label>
+					<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+				</div>
+				<div class="survey-block">
+					<input id="submit" type="submit" value="submit">
+				</div>
+			</form>
+		</main>
+	</div>
+</body>
+</html>
